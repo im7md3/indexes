@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+li,
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f2f2f2;
+  direction: rtl;
+  font-family: "Tahoma", sans-serif;
+  color: #333;
+}
+::-webkit-input-placeholder {
+  font-family: "Tahoma", sans-serif;
+}
+i.fa-plus {
+  font-size: large;
+  margin-left: 10px;
+}
+i.fa-plus:hover {
+  cursor: pointer;
+}
+.wrapper {
+  max-width: 1400px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
+main .top-header {
+  background-color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  z-index: 5;
+}
+main .top-header .wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+main .top-header .title-site {
+  width: 350px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+main .top-header .wrapper .logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+main .top-header .title-site h2 {
+    flex: 1;
+    width: 40px;
+    text-align: center;
+    margin-top: 7px;
+}
+main .top-header .title-site .bars {
+  width: 40px;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+}
+main .top-header .bars .line {
+  background-color: #343a40;
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin-bottom: 2px;
+}
+main {
+  width: 100vw;
+}
+main .content {
+  margin-top: 20px;
+}
+main .content .wrapper {
+  max-width: 1100px;
+  background-color: #ffffff;
+}
+main .content .form {
+  padding: 50px 120px 20px 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  max-width: 1000px;
+  justify-content: center;
+}
+main .content .form form {
+  display: flex;
+  flex-direction: column;
+}
+main .content .form form input {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  color: #343a40;
+}
+main input:active,
+main input:focus {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 3px #343a40 !important;
+}
+main .content .form form textarea {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  margin-bottom: 15px;
+  color: #343a40;
+}
+main .content .form form button {
+    height: 42px;
+    background-color: #00c900;
+    color: #fff;
+    font-family: "Tahoma", sans-serif;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgb(0 0 0 / 20%);
+    margin-bottom: 15px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+main .content .form form button:hover {
+ 
+  cursor: pointer;
+}
+.sidebare {
+  overflow: hidden;
+  width: 200px;
+  height: 100vh;
+  background-color: #343a40;
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 60px;
+  z-index: 1;
+  transition: 0.2s linear;
+  font-size: 14px;
+}
+.sidebare.active {
+  transform: translateX(350px);
+}
+.sidebare h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.sidebare .submenu > li {
+  margin-right: 20px;
+  margin-top: 10px;
+  border-right: 1px solid rgb(122, 122, 122);
+  padding: 0 20px;
+  transition: padding-right 0.4s ease-in-out, color 0.2s ease-in-out;
+}
+.sidebare .submenu li:hover {
+  cursor: pointer;
+  padding-right: 25px;
+  color: #7b7c7c;
+}
+@media screen and (max-width: 768px) {
+  main .content .form {
+    padding: 50px 0;
+    width: 100%;
+  }
+}
+
+
+
+html,
+body,
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Pacifico", "Open Sans";
+  font-weight: lighter;
+  color: #ff8e8e;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #eee8f8;
+}
+
+.variants {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.variants > div {
+  margin-right: 5px;
+}
+
+.variants > div:last-of-type {
+  margin-right: 0;
+}
+
+.file {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.file > input[type='file'] {
+  display: none
+}
+
+.file > label {
+  font-size: 14px;
+  font-weight: 300;
+  cursor: pointer;
+  outline: 0;
+  user-select: none;
+  border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186);
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 1px;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 29%);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file > label:hover {
+  border-color: hsl(0, 0%, 21%);
+}
+
+.file > label:active {
+  background-color: hsl(0, 0%, 96%);
+}
+
+.file > label > i {
+  padding-right: 5px;
+}
+
+.file--upload > label {
+  color: hsl(204, 86%, 53%);
+  border-color: hsl(204, 86%, 53%);
+}
+
+.file--upload > label:hover {
+  border-color: hsl(204, 86%, 53%);
+  background-color: hsl(204, 86%, 96%);
+}
+
+
+.file--uploading > label > i {
+  animation: pulse 5s infinite;
+}
+
+
+
+.file--disabled {
+  cursor: not-allowed;
+}
+
+.file--disabled > label {
+  border-color: #e6e7ef;
+  color: #e6e7ef;
+  pointer-events: none;
+}
+
+.d-flex {
+    display: flex;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.mr-3 {
+    margin-right: 10px;
+}
+.mt-4 {
+    margin-top:15px
+}
+.commented {
+    padding: 10px;
+    border: 1px solid #dddddd52;
+    border-radius: 5px;
+}
